@@ -27,7 +27,7 @@ function alterarStatus(id){
     case 'Alugar':
       imagem.classList.add('dashboard__item__img--rented');
       botao.classList.add('dashboard__item__button--return');
-      botao.innerText = "Devolver";
+      botao.textContent = "Devolver";
       jogosAlugados++;
       break;
     
@@ -35,7 +35,7 @@ function alterarStatus(id){
       if (confirm('Confirma a devolução do jogo?')) {
         imagem.classList.remove('dashboard__item__img--rented');
         botao.classList.remove('dashboard__item__button--return');
-        botao.innerText = "Alugar";
+        botao.textContent = "Alugar";
         jogosAlugados--;
         break;
       }
